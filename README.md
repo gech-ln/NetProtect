@@ -80,3 +80,18 @@ unblockPort(8080);
 
 |Die Anwendung kann mehrere Firewall-Regeln zur Verwaltung von Netzwerkzugriffen verwenden.|
 |---|
+
+<br><br>
+
+### Konfiguration
+- Die Anwendung kann leicht angepasst werden, um mit verschiedenen Prozessen und Firewall-Regeln zu arbeiten. 
+  - Öffne die Datei config.json und passe die Einstellungen an:
+ 
+```yarn
+{
+  "processesToWatch": ["notepad.exe", "calculator.exe"],
+  "firewallRules": {
+    "blockPorts": [8080, 9090]
+  }
+}
+```
