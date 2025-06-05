@@ -19,12 +19,12 @@
 <br>
  
 ### Technische Anforderungen
-> Node.js: Version 14.x oder höher <p>
-> Betriebssystem: Windows 10 oder höher
+- Node.js: Version 14.x oder höher <p>
+  - Betriebssystem: Windows 10 oder höher
 
 
 <br>
 
 ### Installation
-> 1. Node.js installieren <p>
-> Stelle sicher, dass du Node.js auf deinem System installiert hast. Du kannst dies überprüfen, indem du im Terminal den folgenden Befehl ausführst:
+- 1. Node.js installieren <p>
+  - Stelle sicher, dass du Node.js auf deinem System installiert hast. Du kannst dies überprüfen, indem du im Terminal den folgenden Befehl ausführst:
