@@ -1,6 +1,3 @@
-|Dieser README-Text hilft den Benutzern, das **NetGuardUtility** effizient zu nutzen und bietet eine klare Anleitung für die verfügbaren Funktionen.|
-|---|
-
 |SystemGuard - Prozessüberwachung und Firewall-Schutz|
 |---|
 
