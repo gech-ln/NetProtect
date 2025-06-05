@@ -32,3 +32,5 @@
 ```yarn
 node -v
 ```
+|Falls Node.js nicht installiert ist, lade es von der offiziellen Website herunter und folge den Installationsanweisungen.|
+|---|
