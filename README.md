@@ -95,3 +95,12 @@ unblockPort(8080);
   }
 }
 ```
+
+|Beispiele für Konfigurationen|
+|---|
+- processesToWatch:
+  - Eine Liste von Prozessen, die überwacht werden sollen.
+    - Wenn einer dieser Prozesse erkannt wird, wird er automatisch beendet.
+
+- firewallRules.blockPorts:
+  - Eine Liste von Ports, die blockiert werden sollen.
