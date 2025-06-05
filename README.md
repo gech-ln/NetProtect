@@ -104,3 +104,15 @@ unblockPort(8080);
 
 - firewallRules.blockPorts:
   - Eine Liste von Ports, die blockiert werden sollen.
+ 
+<br><br>
+
+SystemGuard/
+│
+├── app.js                 # Hauptanwendungsdatei
+├── config.json            # Konfigurationsdatei für Prozesse und Firewall-Regeln
+├── node_modules/          # Installierte Node.js-Module
+├── package.json           # NPM-Paketdatei
+├── README.md              # Diese Datei
+└── .gitignore             # Git Ignore-Datei
+
