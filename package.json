@@ -1,0 +1,14 @@
+{
+  "name": "systemguard",
+  "version": "1.0.0",
+  "description": "Ein Werkzeug zur Prozessüberwachung und Firewall-Verwaltung für Windows.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ps-list": "^7.0.0"
+  },
+  "author": "Dein Name",
+  "license": "MIT"
+}
