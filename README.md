@@ -36,7 +36,7 @@ node -v
 |---|
 
 ### Projekt-Repository klonen
-- Klonen Sie das Repository auf deinen Computer:
+- Klonen des Repository auf dem Computer:
 
 ```yarn
 git clone https://github.com/deinBenutzername/SystemGuard.git
@@ -49,3 +49,24 @@ cd SystemGuard
 ```yarn
 npm install
 ``` 
+
+<br>
+
+|Verwendung|
+|---|
+- Prozessüberwachung starten
+  - Um die Anwendung zu starten, führe den folgenden Befehl aus:
+
+ ```yarn
+node app.js
+```
+
+> Die Anwendung beginnt, Prozesse zu überwachen.
+> Alle 10 Sekunden wird sie die laufenden Prozesse auf deinem System überprüfen.
+> Falls ein unerwünschter Prozess (z.B. notepad.exe) erkannt wird, wird er automatisch beendet.
+
+<br>
+
+- Firewall-Regeln hinzufügen oder entfernen
+  - Die Anwendung verwaltet die Windows-Firewall, um spezifische Ports zu blockieren oder freizugeben.
+    - Du kannst Ports blockieren, indem du eine Regel hinzufügst:
