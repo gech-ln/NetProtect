@@ -4,7 +4,7 @@
 > SystemGuard ist eine leistungsstarke Anwendung, die Prozesse auf einem Windows-System überwacht, analysiert und bei Bedarf automatisch beendet. <p>
 > Sie kann mit der Windows-Firewall interagieren, um Regeln hinzuzufügen, zu löschen und Ports zu blockieren oder freizugeben. Dies hilft, unerwünschte Prozesse zu verhindern und das System vor potenziellen Bedrohungen zu schützen.
 
-<br>
+<br><br>
 
 ### Funktionen
 - Prozessüberwachung:
@@ -16,14 +16,14 @@
 - Einfache Konfiguration:
   - Die Anwendung kann leicht angepasst werden, um mit unterschiedlichen Prozessen und Firewall-Regeln zu arbeiten.
 
-<br>
+<br><br>
  
 ### Technische Anforderungen
 - Node.js: Version 14.x oder höher <p>
   - Betriebssystem: Windows 10 oder höher
 
 
-<br>
+<br><br>
 
 ### Installation
 - Node.js installieren <p>
@@ -50,7 +50,7 @@ cd SystemGuard
 npm install
 ``` 
 
-<br>
+<br><br>
 
 |Verwendung|
 |---|
@@ -65,8 +65,21 @@ node app.js
 > Alle 10 Sekunden wird sie die laufenden Prozesse auf deinem System überprüfen.
 > Falls ein unerwünschter Prozess (z.B. notepad.exe) erkannt wird, wird er automatisch beendet.
 
-<br>
+<br><br>
 
 - Firewall-Regeln hinzufügen oder entfernen
   - Die Anwendung verwaltet die Windows-Firewall, um spezifische Ports zu blockieren oder freizugeben.
     - Du kannst Ports blockieren, indem du eine Regel hinzufügst:
+
+```yarn
+blockPort(8080);
+```
+
+> Oder du kannst eine Regel entfernen:
+
+```yarn
+unblockPort(8080);
+```
+
+|Die Anwendung kann mehrere Firewall-Regeln zur Verwaltung von Netzwerkzugriffen verwenden.|
+|---|
