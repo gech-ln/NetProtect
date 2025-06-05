@@ -1,0 +1,6 @@
+{
+  "processesToWatch": ["notepad.exe", "calculator.exe"],
+  "firewallRules": {
+    "blockPorts": [8080, 9090]
+  }
+}
