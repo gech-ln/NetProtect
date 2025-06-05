@@ -126,3 +126,14 @@ SystemGuard/
 
 - Überprüfe, ob alle notwendigen Module installiert wurden (npm install).
   - Falls ein Fehler bei der Kommunikation mit der Windows-Firewall auftritt, stelle sicher, dass du Administratorrechte hast.
+ 
+<br><br>
+
+|Mitwirken|
+|---|
+
+> Beiträge zum Projekt sind jederzeit willkommen! <p>
+> Wenn du Fehler entdeckst oder neue Funktionen hinzufügen möchtest, öffne einfach einen Pull-Request. <p>
+> Stelle sicher, dass du alle Tests durchführst, bevor du eine Änderung vorschlägst.
+
+---
