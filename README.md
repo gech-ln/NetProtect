@@ -117,3 +117,12 @@ SystemGuard/
 ├── README.md              # Diese Datei
 └── .gitignore             # Git Ignore-Datei
 ```
+
+<br><br>
+
+### Fehlerbehebung
+- Falls beim Ausführen der Anwendung Fehler auftreten, überprüfe folgende Punkte:
+  - Stelle sicher, dass Node.js korrekt installiert ist.
+
+- Überprüfe, ob alle notwendigen Module installiert wurden (npm install).
+  - Falls ein Fehler bei der Kommunikation mit der Windows-Firewall auftritt, stelle sicher, dass du Administratorrechte hast.
