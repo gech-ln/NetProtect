@@ -1,5 +1,8 @@
 # Windows Utility Batch Script
 
+|![NetGuardUtility](https://github.com/user-attachments/assets/e8021ea7-3a72-427f-bb66-8cc2eb2b01b3)|
+|---|
+
 |Voraussetzungen|
 |---|
 - Windows Betriebssystem (alle Versionen ab Windows 7)
