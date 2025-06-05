@@ -34,3 +34,18 @@ node -v
 ```
 |Falls Node.js nicht installiert ist, lade es von der offiziellen Website herunter und folge den Installationsanweisungen.|
 |---|
+
+### Projekt-Repository klonen
+- Klonen Sie das Repository auf deinen Computer:
+
+```yarn
+git clone https://github.com/deinBenutzername/SystemGuard.git
+cd SystemGuard
+```
+
+### Abhängigkeiten installieren
+- Installiere die benötigten Node.js-Module mit npm:
+
+```yarn
+npm install
+``` 
