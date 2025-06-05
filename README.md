@@ -26,5 +26,5 @@
 <br>
 
 ### Installation
-- 1. Node.js installieren <p>
+- Node.js installieren <p>
   - Stelle sicher, dass du Node.js auf deinem System installiert hast. Du kannst dies überprüfen, indem du im Terminal den folgenden Befehl ausführst:
