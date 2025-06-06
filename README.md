@@ -1,7 +1,7 @@
 |SystemGuard - Prozessüberwachung und Firewall-Schutz|
 |---|
 
-| ![NetProtect](https://github.com/user-attachments/assets/adbe3901-9b1f-4d02-ba62-130b161c817a)|
+|![Net_Protect](https://github.com/user-attachments/assets/c44c6e1e-14b1-4263-b836-c33772e25628)|
 |---|
 
 > SystemGuard ist eine leistungsstarke Anwendung, die Prozesse auf einem Windows-System überwacht, analysiert und bei Bedarf automatisch beendet. <p>
